@@ -10,7 +10,7 @@ import {
 
 import { THEME } from "./src/theme";
 
-import { SignIn } from "@screens/index";
+import { SignIn } from "@screens/SignIn";
 
 import { Loading } from "@components/Loading";
 

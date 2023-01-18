@@ -1,6 +1,7 @@
 import { VStack, Image, Text, Center, Heading } from "native-base";
 
 import { Input } from "@components/Input";
+import { Button } from "@components/Button";
 
 import LogoSvg from "@assets/logo.svg";
 import BackgroundImg from "@assets/background.png";
@@ -34,6 +35,9 @@ export const SignIn = () => {
           autoCapitalize="none"
         />
         <Input placeholder="Senha" secureTextEntry />
+
+        <Button title="Acessar" />
+        <Button title="Criar conta" variant="outline" />
       </Center>
     </VStack>
   );

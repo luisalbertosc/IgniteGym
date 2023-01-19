@@ -1,9 +1,11 @@
-import { Center, Text } from "native-base";
+import { VStack } from "native-base";
+
+import { ScreenHeader } from "@components/ScreenHeader";
 
 export const History = () => {
   return (
-    <Center>
-      <Text>History</Text>
-    </Center>
+    <VStack flex={1}>
+      <ScreenHeader title="Histórico" />
+    </VStack>
   );
 };

@@ -27,7 +27,7 @@ export const Profile = () => {
 
   const toast = useToast();
 
-  async function handleUserPhotoSelected() {
+  const handleUserPhotoSelected = async () => {
     try {
       const photoSelected = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
@@ -59,7 +59,7 @@ export const Profile = () => {
     } finally {
       setPhotoIsLoading(false);
     }
-  }
+  };
 
   return (
     <VStack flex={1}>

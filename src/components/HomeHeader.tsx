@@ -1,11 +1,15 @@
 import { TouchableOpacity } from "react-native";
 import { Heading, HStack, Text, VStack, Icon } from "native-base";
 
+import { useAuth } from "@hooks/useAuth";
+
 import { MaterialIcons } from "@expo/vector-icons";
 
 import { UserPhoto } from "./UserPhoto";
 
 export const HomeHeader = () => {
+  const { user } = useAuth();
+
   return (
     <HStack bg="gray.600" pt={16} pb={5} px={8} alignItems="center">
       <UserPhoto
@@ -20,7 +24,7 @@ export const HomeHeader = () => {
           Olá,
         </Text>
         <Heading color="gray.100" fontSize="md" fontFamily="heading">
-          Matheus
+          {user.name}
         </Heading>
       </VStack>
 
